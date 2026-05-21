@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Player S12 | Elite Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #02060c;
+            --accent: #00e5ff;
+            --gold: #ffcc00;
+            --card: rgba(15, 23, 42, 0.8);
+        }
+
+        body { 
+            font-family: 'Rajdhani', sans-serif; 
+            margin: 0; padding: 20px; color: #fff;
+            /* Animated Background */
+            background: radial-gradient(circle at 50% 50%, #1e293b 0%, #02060c 70%);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 { text-align: center; color: var(--gold); text-transform: uppercase; letter-spacing: 5px; }
+        .bracket-container { display: flex; gap: 15px; overflow-x: auto; justify-content: center; padding-top: 20px; }
+        .column { min-width: 180px; }
+        .round-title { text-align: center; color: var(--accent); margin-bottom: 15px; font-weight: 700; text-transform: uppercase; }
+        
+        .match { 
+            background: var(--card); border: 1px solid rgba(0, 229, 255, 0.2); 
+            border-radius: 10px; padding: 12px; margin-bottom: 15px; 
+            backdrop-filter: blur(5px); transition: 0.3s;
+        }
+        .match:hover { border-color: var(--accent); transform: scale(1.02); }
+        .team { display: flex; justify-content: space-between; margin-bottom: 5px; }
+        .icon { color: var(--accent); margin-right: 8px; }
+        .gold-icon { color: var(--gold); }
+    </style>
+</head>
+<body>
+
+<h1><i class="fa-solid fa-trophy gold-icon"></i> Season 12 <i class="fa-solid fa-trophy gold-icon"></i></h1>
+
+<div class="bracket-container">
+    <div class="column">
+        <div class="round-title"><i class="fa-solid fa-users"></i> Ro16</div>
+        <script>for(let i=1; i<=8; i++) document.write(`
+            <div class="match">
+                <div class="team"><span><i class="fa-solid fa-user icon"></i>Slot ${i*2-1}</span></div>
+                <div class="team"><span><i class="fa-solid fa-user icon"></i>Slot ${i*2}</span></div>
+            </div>`);
+        </script>
+    </div>
+
+    <div class="column">
+        <div class="round-title"><i class="fa-solid fa-shield-halved"></i> QF</div>
+        <div class="match"><div class="team"><span>Winner 1</span></div><div class="team"><span>Winner 2</span></div></div>
+        <div class="match"><div class="team"><span>Winner 3</span></div><div class="team"><span>Winner 4</span></div></div>
+        <div class="match"><div class="team"><span>Winner 5</span></div><div class="team"><span>Winner 6</span></div></div>
+        <div class="match"><div class="team"><span>Winner 7</span></div><div class="team"><span>Winner 8</span></div></div>
+    </div>
+
+    <div class="column">
+        <div class="round-title"><i class="fa-solid fa-bolt"></i> Semi</div>
+        <div class="match"><div class="team"><span>SF1</span></div><div class="team"><span>SF2</span></div></div>
+        <div class="match"><div class="team"><span>SF3</span></div><div class="team"><span>SF4</span></div></div>
+    </div>
+
+    <div class="column">
+        <div class="round-title"><i class="fa-solid fa-star gold-icon"></i> Final</div>
+        <div class="match" style="border: 2px solid var(--gold);">
+            <div class="team"><span><i class="fa-solid fa-crown gold-icon"></i> Finalist 1</span></div>
+            <div class="team"><span><i class="fa-solid fa-crown gold-icon"></i> Finalist 2</span></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
