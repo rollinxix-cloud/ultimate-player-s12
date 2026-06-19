@@ -1,63 +1,63 @@
 {
-"players": [
-"D Yozen King",
-"Hab II",
-"Ganesh Nepali",
-"Binaya Shrestha",
-"Subash Tamang",
-"Aashik Gurung",
-"Smile Xettri",
-"Siv Sunar"
-],
-"matches": {
-"qf1": {
-"p1": "D Yozen King",
-"p2": "Hab II",
-"p1_score": null,
-"p2_score": null,
-"winner": null
-},
-"qf2": {
-"p1": "Ganesh Nepali",
-"p2": "Binaya Shrestha",
-"p1_score": null,
-"p2_score": null,
-"winner": null
-},
-"qf3": {
-"p1": "Subash Tamang",
-"p2": "Aashik Gurung",
-"p1_score": null,
-"p2_score": null,
-"winner": null
-},
-"qf4": {
-"p1": "Smile Xettri",
-"p2": "Siv Sunar",
-"p1_score": null,
-"p2_score": null,
-"winner": null
-},
-"sf1": {
-"p1": null,
-"p2": null,
-"p1_score": null,
-"p2_score": null,
-"winner": null
-},
-"sf2": {
-"p1": null,
-"p2": null,
-"p1_score": null,
-"p2_score": null,
-"winner": null
-},
-"final": {
-"p1": null,
-"p2": null,
-"p1_score": null,
-"p2_score": null,
-"winner": null
-}
-}
+    "players": [
+        "D Yozen King",
+        "Hab II",
+        "Ganesh Nepali",
+        "Binaya Shrestha",
+        "Subash Tamang",
+        "Aashik Gurung",
+        "Smile Xettri",
+        "Siv Sunar"
+    ],
+    "matches": {
+        "qf1": {
+            "p1": "D Yozen King",
+            "p2": "Hab II",
+            "p1_score": null,
+            "p2_score": null,
+            "winner": null
+        },
+        "qf2": {
+            "p1": "Ganesh Nepali",
+            "p2": "Binaya Shrestha",
+            "p1_score": null,
+            "p2_score": null,
+            "winner": null
+        },
+        "qf3": {
+            "p1": "Subash Tamang",
+            "p2": "Aashik Gurung",
+            "p1_score": null,
+            "p2_score": null,
+            "winner": null
+        },
+        "qf4": {
+            "p1": "Smile Xettri",
+            "p2": "Siv Sunar",
+            "p1_score": 7,
+            "p2_score": 5,
+            "winner": "Smile Xettri"
+        },
+        "sf1": {
+            "p1": null,
+            "p2": null,
+            "p1_score": null,
+            "p2_score": null,
+            "winner": null
+        },
+        "sf2": {
+            "p1": null,
+            "p2": "Smile Xettri",
+            "p1_score": null,
+            "p2_score": null,
+            "winner": null
+        },
+        "final": {
+            "p1": null,
+            "p2": null,
+            "p1_score": null,
+            "p2_score": null,
+            "winner": null
+        }
+    }
 }
