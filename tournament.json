@@ -1,0 +1,12 @@
+{
+"players": [],
+"matches": {
+"qf1": {"p1": null, "p2": null, "winner": null},
+"qf2": {"p1": null, "p2": null, "winner": null},
+"qf3": {"p1": null, "p2": null, "winner": null},
+"qf4": {"p1": null, "p2": null, "winner": null},
+"sf1": {"p1": null, "p2": null, "winner": null},
+"sf2": {"p1": null, "p2": null, "winner": null},
+"final": {"p1": null, "p2": null, "winner": null}
+}
+}
