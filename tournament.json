@@ -1,12 +1,49 @@
 {
-"players": [],
-"matches": {
-"qf1": {"p1": null, "p2": null, "winner": null},
-"qf2": {"p1": null, "p2": null, "winner": null},
-"qf3": {"p1": null, "p2": null, "winner": null},
-"qf4": {"p1": null, "p2": null, "winner": null},
-"sf1": {"p1": null, "p2": null, "winner": null},
-"sf2": {"p1": null, "p2": null, "winner": null},
-"final": {"p1": null, "p2": null, "winner": null}
-}
+    "players": [
+        "Smile Xettri",
+        "Ganesh Nepali",
+        "D Yozon King",
+        "Subash Tamang",
+        "Binaya Shrestha",
+        "Hab II",
+        "Siv Sunar",
+        "Aashik Gurung"
+    ],
+    "matches": {
+        "qf1": {
+            "p1": "Smile Xettri",
+            "p2": "Ganesh Nepali",
+            "winner": null
+        },
+        "qf2": {
+            "p1": "D Yozon King",
+            "p2": "Subash Tamang",
+            "winner": null
+        },
+        "qf3": {
+            "p1": "Binaya Shrestha",
+            "p2": "Hab II",
+            "winner": null
+        },
+        "qf4": {
+            "p1": "Siv Sunar",
+            "p2": "Aashik Gurung",
+            "winner": null
+        },
+        "sf1": {
+            "p1": null,
+            "p2": null,
+            "winner": null
+        },
+        "sf2": {
+            "p1": null,
+            "p2": null,
+            "winner": null
+        },
+        "final": {
+            "p1": null,
+            "p2": null,
+            "winner": null
+        }
+    }
 }
