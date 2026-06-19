@@ -12,6 +12,12 @@
         body {
             background-color: #0b0f19;
         }
+        /* Custom styles for winner and loser state visualization */
+        .loser-strike {
+            text-decoration: line-through;
+            opacity: 0.4;
+            color: #9ca3af !important;
+        }
     </style>
 </head>
 <body class="text-gray-100 min-h-screen font-sans flex flex-col justify-between">
@@ -28,18 +34,22 @@
     <main class="flex-grow flex items-center justify-center p-4 md:p-8 overflow-x-auto">
         <div class="grid grid-cols-5 gap-4 min-w-[1000px] items-center text-center">
             
+            <!-- LEFT QUARTERFINALS -->
             <div class="space-y-24">
                 <div class="text-xs uppercase font-bold tracking-widest text-cyan-400 mb-2">Quarterfinals (L)</div>
+                <!-- Match 1 -->
                 <div class="bg-gray-800/80 p-3 rounded-lg border border-gray-700 shadow-xl transition-all duration-300 hover:border-cyan-500 hover:scale-105">
-                    <div id="p0" class="py-1 px-2 font-medium border-b border-gray-700 text-left truncate">TBD</div>
-                    <div id="p1" class="py-1 px-2 font-medium text-left truncate">TBD</div>
+                    <div id="p0" class="py-1 px-2 font-medium border-b border-gray-700 text-left truncate text-gray-500 italic">TBD</div>
+                    <div id="p1" class="py-1 px-2 font-medium text-left truncate text-gray-500 italic">TBD</div>
                 </div>
+                <!-- Match 2 -->
                 <div class="bg-gray-800/80 p-3 rounded-lg border border-gray-700 shadow-xl transition-all duration-300 hover:border-cyan-500 hover:scale-105">
-                    <div id="p2" class="py-1 px-2 font-medium border-b border-gray-700 text-left truncate">TBD</div>
-                    <div id="p3" class="py-1 px-2 font-medium text-left truncate">TBD</div>
+                    <div id="p2" class="py-1 px-2 font-medium border-b border-gray-700 text-left truncate text-gray-500 italic">TBD</div>
+                    <div id="p3" class="py-1 px-2 font-medium text-left truncate text-gray-500 italic">TBD</div>
                 </div>
             </div>
 
+            <!-- LEFT SEMIFINALS -->
             <div class="space-y-12">
                 <div class="text-xs uppercase font-bold tracking-widest text-cyan-500 mb-2">Semifinals (L)</div>
                 <div class="bg-gray-800/50 p-4 rounded-lg border border-dashed border-gray-700 shadow-xl">
@@ -48,10 +58,11 @@
                 </div>
             </div>
 
+            <!-- GRAND FINAL STAGE -->
             <div class="flex flex-col items-center justify-center bg-gradient-to-b from-blue-950/40 to-cyan-950/20 border-2 border-cyan-500/30 p-6 rounded-2xl shadow-2xl relative overflow-hidden">
                 <div class="absolute inset-0 bg-cyan-500/5 animate-pulse pointer-events-none"></div>
                 
-                <div class="text-amber-400 text-3xl mb-1 animate-bounce">👑</div>
+                <div class="text-amber-400 text-3xl mb-1 animate-bounce" id="final-crown">👑</div>
                 <div class="text-sm uppercase font-black tracking-widest text-amber-400 mb-4">Grand Championship</div>
                 
                 <div class="w-full space-y-3">
@@ -63,8 +74,14 @@
                         East Champion
                     </div>
                 </div>
+
+                <div id="champion-announcement" class="mt-6 hidden flex-col items-center">
+                    <div class="text-xs text-amber-400 uppercase tracking-widest font-bold mb-1">👑 Season 12 Champion 👑</div>
+                    <div id="champion-winner-name" class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-200 uppercase tracking-wider scale-110 drop-shadow-md"></div>
+                </div>
             </div>
 
+            <!-- RIGHT SEMIFINALS -->
             <div class="space-y-12">
                 <div class="text-xs uppercase font-bold tracking-widest text-purple-500 mb-2">Semifinals (R)</div>
                 <div class="bg-gray-800/50 p-4 rounded-lg border border-dashed border-gray-700 shadow-xl">
@@ -73,15 +90,18 @@
                 </div>
             </div>
 
+            <!-- RIGHT QUARTERFINALS -->
             <div class="space-y-24">
                 <div class="text-xs uppercase font-bold tracking-widest text-purple-400 mb-2">Quarterfinals (R)</div>
+                <!-- Match 3 -->
                 <div class="bg-gray-800/80 p-3 rounded-lg border border-gray-700 shadow-xl transition-all duration-300 hover:border-purple-500 hover:scale-105">
-                    <div id="p4" class="py-1 px-2 font-medium border-b border-gray-700 text-left truncate">TBD</div>
-                    <div id="p5" class="py-1 px-2 font-medium text-left truncate">TBD</div>
+                    <div id="p4" class="py-1 px-2 font-medium border-b border-gray-700 text-left truncate text-gray-500 italic">TBD</div>
+                    <div id="p5" class="py-1 px-2 font-medium text-left truncate text-gray-500 italic">TBD</div>
                 </div>
+                <!-- Match 4 -->
                 <div class="bg-gray-800/80 p-3 rounded-lg border border-gray-700 shadow-xl transition-all duration-300 hover:border-purple-500 hover:scale-105">
-                    <div id="p6" class="py-1 px-2 font-medium border-b border-gray-700 text-left truncate">TBD</div>
-                    <div id="p7" class="py-1 px-2 font-medium text-left truncate">TBD</div>
+                    <div id="p6" class="py-1 px-2 font-medium border-b border-gray-700 text-left truncate text-gray-500 italic">TBD</div>
+                    <div id="p7" class="py-1 px-2 font-medium text-left truncate text-gray-500 italic">TBD</div>
                 </div>
             </div>
 
@@ -89,26 +109,79 @@
     </main>
 
     <footer class="text-center py-4 text-xs text-gray-500 border-t border-gray-900 bg-black/20">
-        Powered by Git Automation &bull; Data synced from <code class="text-cyan-400">players.json</code>
+        Powered by Git Automation &bull; Data synced from <code class="text-cyan-400">tournament.json</code>
     </footer>
 
     <script>
-        // Fetch real data from your tracking file
-        fetch('players.json')
+        // Fetch matching structure from tournament database instead of simple raw array
+        fetch('tournament.json')
             .then(response => response.json())
             .then(data => {
-                // Safely update up to 8 positional data structures
-                for (let i = 0; i < 8; i++) {
-                    const el = document.getElementById(`p${i}`);
-                    if (el && data[i]) {
-                        el.innerText = data[i];
-                        el.classList.remove('text-gray-500', 'italic');
-                        el.classList.add('text-white', 'font-semibold');
+                const matches = data.matches;
+
+                // Helper utility to safely style and update a match matchup
+                const populateMatchup = (matchObj, p1ElId, p2ElId, winnerAccentClass) => {
+                    const el1 = document.getElementById(p1ElId);
+                    const el2 = document.getElementById(p2ElId);
+
+                    if (!el1 || !el2) return;
+
+                    // Load Player 1
+                    if (matchObj.p1) {
+                        el1.innerText = matchObj.p1;
+                        el1.classList.remove('text-gray-500', 'italic');
+                        el1.classList.add('text-white', 'font-semibold');
+                    }
+                    
+                    // Load Player 2
+                    if (matchObj.p2) {
+                        el2.innerText = matchObj.p2;
+                        el2.classList.remove('text-gray-500', 'italic');
+                        el2.classList.add('text-white', 'font-semibold');
+                    }
+
+                    // Apply visual states for concluded matches
+                    if (matchObj.winner) {
+                        if (matchObj.winner === matchObj.p1) {
+                            el1.classList.add(winnerAccentClass);
+                            el2.classList.add('loser-strike');
+                        } else if (matchObj.winner === matchObj.p2) {
+                            el2.classList.add(winnerAccentClass);
+                            el1.classList.add('loser-strike');
+                        }
+                    }
+                };
+
+                // 1. Process Quarterfinals (Left Side)
+                populateMatchup(matches.qf1, 'p0', 'p1', 'text-cyan-400');
+                populateMatchup(matches.qf2, 'p2', 'p3', 'text-cyan-400');
+
+                // 2. Process Semifinals (Left Side)
+                populateMatchup(matches.sf1, 'semi-l1', 'semi-l2', 'text-cyan-400');
+
+                // 3. Process Grand Final Central Layout
+                populateMatchup(matches.final, 'final-l', 'final-r', 'text-amber-400');
+
+                // 4. Process Semifinals (Right Side)
+                populateMatchup(matches.sf2, 'semi-r1', 'semi-r2', 'text-purple-400');
+
+                // 5. Process Quarterfinals (Right Side)
+                populateMatchup(matches.qf3, 'p4', 'p5', 'text-purple-400');
+                populateMatchup(matches.qf4, 'p6', 'p7', 'text-purple-400');
+
+                // 6. Final Champion Reveal
+                if (matches.final.winner) {
+                    const announcement = document.getElementById('champion-announcement');
+                    const nameContainer = document.getElementById('champion-winner-name');
+                    if (announcement && nameContainer) {
+                        announcement.classList.remove('hidden');
+                        announcement.classList.add('flex');
+                        nameContainer.innerText = matches.final.winner;
                     }
                 }
             })
             .catch(error => {
-                console.log("Local browser fetch blocked or missing JSON. Displaying design scaffolding.", error);
+                console.log("Local browser fetch blocked or tournament.json has not been created yet.", error);
             });
     </script>
 </body>
