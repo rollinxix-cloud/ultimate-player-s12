@@ -192,22 +192,22 @@
                 <div class="text-xs uppercase font-bold tracking-widest text-cyan-400 mb-2">Quarterfinals (L)</div>
                 <div class="theme-card p-3 rounded-lg border shadow-xl hover:border-cyan-500 hover:scale-105">
                     <div class="flex justify-between items-center py-1.5 px-2 border-b theme-border">
-                        <span id="p0" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                        <span id="p0-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="p0" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                        <span data-score="p0" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                     <div class="flex justify-between items-center py-1.5 px-2">
-                        <span id="p1" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                        <span id="p1-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="p1" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                        <span data-score="p1" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                 </div>
                 <div class="theme-card p-3 rounded-lg border shadow-xl hover:border-cyan-500 hover:scale-105">
                     <div class="flex justify-between items-center py-1.5 px-2 border-b theme-border">
-                        <span id="p2" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                        <span id="p2-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="p2" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                        <span data-score="p2" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                     <div class="flex justify-between items-center py-1.5 px-2">
-                        <span id="p3" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                        <span id="p3-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="p3" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                        <span data-score="p3" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                 </div>
             </div>
@@ -217,12 +217,12 @@
                 <div class="text-xs uppercase font-bold tracking-widest text-cyan-500 mb-2">Semifinals (L)</div>
                 <div class="theme-dashed-card p-4 rounded-lg border border-dashed shadow-xl">
                     <div class="flex justify-between items-center py-1.5 px-2 border-b theme-border">
-                        <span id="semi-l1" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M1</span>
-                        <span id="semi-l1-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="semi-l1" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M1</span>
+                        <span data-score="semi-l1" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                     <div class="flex justify-between items-center py-1.5 px-2">
-                        <span id="semi-l2" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M2</span>
-                        <span id="semi-l2-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="semi-l2" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M2</span>
+                        <span data-score="semi-l2" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                 </div>
             </div>
@@ -236,19 +236,19 @@
                 
                 <div class="w-full space-y-2 md:space-y-3">
                     <div class="flex justify-between items-center theme-inner py-2 md:py-2.5 px-3 md:px-4 rounded-md border border-cyan-500">
-                        <span id="final-l" class="font-bold text-xs md:text-sm tracking-wide text-custom-italic italic truncate text-left">West Champion</span>
-                        <span id="final-l-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="final-l" class="font-bold text-xs md:text-sm tracking-wide text-custom-italic italic truncate text-left">West Champion</span>
+                        <span data-score="final-l" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                     <div class="text-xs font-black text-cyan-400 uppercase tracking-widest text-center">VS</div>
                     <div class="flex justify-between items-center theme-inner py-2 md:py-2.5 px-3 md:px-4 rounded-md border border-purple-500">
-                        <span id="final-r" class="font-bold text-xs md:text-sm tracking-wide text-custom-italic italic truncate text-left">East Champion</span>
-                        <span id="final-r-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="final-r" class="font-bold text-xs md:text-sm tracking-wide text-custom-italic italic truncate text-left">East Champion</span>
+                        <span data-score="final-r" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                 </div>
 
-                <div id="champion-announcement" class="mt-3 md:mt-6 hidden flex-col items-center">
+                <div data-champion="announcement" class="mt-3 md:mt-6 hidden flex-col items-center">
                     <div class="text-xs text-amber-400 uppercase tracking-widest font-bold mb-1">👑 Season 12 Champion 👑</div>
-                    <div id="champion-winner-name" class="text-lg md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-200 uppercase tracking-wider drop-shadow-lg"></div>
+                    <div data-champion="name" class="text-lg md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-200 uppercase tracking-wider drop-shadow-lg"></div>
                 </div>
             </div>
 
@@ -257,12 +257,12 @@
                 <div class="text-xs uppercase font-bold tracking-widest text-purple-500 mb-2">Semifinals (R)</div>
                 <div class="theme-dashed-card p-4 rounded-lg border border-dashed shadow-xl">
                     <div class="flex justify-between items-center py-1.5 px-2 border-b theme-border">
-                        <span id="semi-r1" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M3</span>
-                        <span id="semi-r1-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="semi-r1" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M3</span>
+                        <span data-score="semi-r1" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                     <div class="flex justify-between items-center py-1.5 px-2">
-                        <span id="semi-r2" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M4</span>
-                        <span id="semi-r2-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="semi-r2" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M4</span>
+                        <span data-score="semi-r2" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                 </div>
             </div>
@@ -272,22 +272,22 @@
                 <div class="text-xs uppercase font-bold tracking-widest text-purple-400 mb-2">Quarterfinals (R)</div>
                 <div class="theme-card p-3 rounded-lg border shadow-xl hover:border-purple-500 hover:scale-105">
                     <div class="flex justify-between items-center py-1.5 px-2 border-b theme-border">
-                        <span id="p4" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                        <span id="p4-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="p4" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                        <span data-score="p4" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                     <div class="flex justify-between items-center py-1.5 px-2">
-                        <span id="p5" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                        <span id="p5-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="p5" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                        <span data-score="p5" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                 </div>
                 <div class="theme-card p-3 rounded-lg border shadow-xl hover:border-purple-500 hover:scale-105">
                     <div class="flex justify-between items-center py-1.5 px-2 border-b theme-border">
-                        <span id="p6" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                        <span id="p6-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="p6" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                        <span data-score="p6" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                     <div class="flex justify-between items-center py-1.5 px-2">
-                        <span id="p7" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                        <span id="p7-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                        <span data-player="p7" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                        <span data-score="p7" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                     </div>
                 </div>
             </div>
@@ -303,22 +303,22 @@
                     <div class="space-y-3">
                         <div class="theme-card p-2 rounded-lg border shadow-xl">
                             <div class="flex justify-between items-center py-1 px-2 border-b theme-border">
-                                <span id="p0" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                                <span id="p0-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                                <span data-player="p0" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                                <span data-score="p0" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                             </div>
                             <div class="flex justify-between items-center py-1 px-2">
-                                <span id="p1" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                                <span id="p1-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                                <span data-player="p1" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                                <span data-score="p1" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                             </div>
                         </div>
                         <div class="theme-card p-2 rounded-lg border shadow-xl">
                             <div class="flex justify-between items-center py-1 px-2 border-b theme-border">
-                                <span id="p2" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                                <span id="p2-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                                <span data-player="p2" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                                <span data-score="p2" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                             </div>
                             <div class="flex justify-between items-center py-1 px-2">
-                                <span id="p3" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                                <span id="p3-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                                <span data-player="p3" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                                <span data-score="p3" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                             </div>
                         </div>
                     </div>
@@ -329,12 +329,12 @@
                     <h3 class="text-xs uppercase font-bold tracking-widest text-cyan-500 mb-3">Left Semifinals</h3>
                     <div class="theme-dashed-card p-2 rounded-lg border border-dashed shadow-xl">
                         <div class="flex justify-between items-center py-1 px-2 border-b theme-border">
-                            <span id="semi-l1" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M1</span>
-                            <span id="semi-l1-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                            <span data-player="semi-l1" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M1</span>
+                            <span data-score="semi-l1" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                         </div>
                         <div class="flex justify-between items-center py-1 px-2">
-                            <span id="semi-l2" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M2</span>
-                            <span id="semi-l2-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                            <span data-player="semi-l2" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M2</span>
+                            <span data-score="semi-l2" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                         </div>
                     </div>
                 </div>
@@ -348,19 +348,19 @@
                     
                     <div class="w-full space-y-2">
                         <div class="flex justify-between items-center theme-inner py-2 px-3 rounded-md border border-cyan-500">
-                            <span id="final-l" class="font-bold tracking-wide text-custom-italic italic truncate text-left text-xs">West Champion</span>
-                            <span id="final-l-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                            <span data-player="final-l" class="font-bold tracking-wide text-custom-italic italic truncate text-left text-xs">West Champion</span>
+                            <span data-score="final-l" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                         </div>
                         <div class="text-xs font-black text-cyan-400 uppercase tracking-widest text-center">VS</div>
                         <div class="flex justify-between items-center theme-inner py-2 px-3 rounded-md border border-purple-500">
-                            <span id="final-r" class="font-bold tracking-wide text-custom-italic italic truncate text-left text-xs">East Champion</span>
-                            <span id="final-r-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                            <span data-player="final-r" class="font-bold tracking-wide text-custom-italic italic truncate text-left text-xs">East Champion</span>
+                            <span data-score="final-r" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                         </div>
                     </div>
 
-                    <div id="champion-announcement" class="mt-4 hidden flex-col items-center">
+                    <div data-champion="announcement" class="mt-4 hidden flex-col items-center">
                         <div class="text-xs text-amber-400 uppercase tracking-widest font-bold mb-1">👑 Champion 👑</div>
-                        <div id="champion-winner-name" class="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-200 uppercase tracking-wider drop-shadow-lg"></div>
+                        <div data-champion="name" class="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-200 uppercase tracking-wider drop-shadow-lg"></div>
                     </div>
                 </div>
 
@@ -369,12 +369,12 @@
                     <h3 class="text-xs uppercase font-bold tracking-widest text-purple-500 mb-3">Right Semifinals</h3>
                     <div class="theme-dashed-card p-2 rounded-lg border border-dashed shadow-xl">
                         <div class="flex justify-between items-center py-1 px-2 border-b theme-border">
-                            <span id="semi-r1" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M3</span>
-                            <span id="semi-r1-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                            <span data-player="semi-r1" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M3</span>
+                            <span data-score="semi-r1" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                         </div>
                         <div class="flex justify-between items-center py-1 px-2">
-                            <span id="semi-r2" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M4</span>
-                            <span id="semi-r2-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                            <span data-player="semi-r2" class="font-semibold text-custom-italic italic text-left truncate text-xs">Winner M4</span>
+                            <span data-score="semi-r2" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                         </div>
                     </div>
                 </div>
@@ -385,22 +385,22 @@
                     <div class="space-y-3">
                         <div class="theme-card p-2 rounded-lg border shadow-xl">
                             <div class="flex justify-between items-center py-1 px-2 border-b theme-border">
-                                <span id="p4" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                                <span id="p4-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                                <span data-player="p4" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                                <span data-score="p4" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                             </div>
                             <div class="flex justify-between items-center py-1 px-2">
-                                <span id="p5" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                                <span id="p5-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                                <span data-player="p5" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                                <span data-score="p5" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                             </div>
                         </div>
                         <div class="theme-card p-2 rounded-lg border shadow-xl">
                             <div class="flex justify-between items-center py-1 px-2 border-b theme-border">
-                                <span id="p6" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                                <span id="p6-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                                <span data-player="p6" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                                <span data-score="p6" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                             </div>
                             <div class="flex justify-between items-center py-1 px-2">
-                                <span id="p7" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
-                                <span id="p7-score" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
+                                <span data-player="p7" class="font-semibold truncate text-custom-italic italic text-xs">TBD</span>
+                                <span data-score="p7" class="text-xs theme-score px-2 py-0.5 rounded font-mono font-bold hidden">-</span>
                             </div>
                         </div>
                     </div>
@@ -410,10 +410,6 @@
         </div>
 
     </main>
-
-    <footer class="text-center py-4 text-xs text-gray-500 border-t theme-border bg-black/20 px-4">
-        Powered by Git Automation &bull; Data synced from <code class="text-cyan-400">tournament.json</code>
-    </footer>
 
     <script>
         // --- 1. DARK/LIGHT MODE CONTROLLER ---
@@ -470,53 +466,71 @@
             if (e.target === modal) closeModal();
         });
 
-        // --- 3. TOURNAMENT STATS LOADER ---
-        fetch('tournament.json')
+        // --- 3. TOURNAMENT STATS LOADER WITH DATA-ATTRIBUTE MAPPING ---
+        // Construct Cache-Buster URL to bypass browser caching policies completely
+        const cacheBusterUrl = 'tournament.json?t=' + new Date().getTime();
+
+        fetch(cacheBusterUrl)
             .then(response => response.json())
             .then(data => {
                 const matches = data.matches;
 
-                const populateMatchup = (matchObj, p1ElId, p2ElId, winnerAccentClass) => {
-                    const el1 = document.getElementById(p1ElId);
-                    const el2 = document.getElementById(p2ElId);
-                    const score1El = document.getElementById(p1ElId + '-score');
-                    const score2El = document.getElementById(p2ElId + '-score');
+                // Robust function to update all matching data-attribute DOM structures across both desktop and mobile layouts simultaneously
+                const populateMatchup = (matchObj, p1Key, p2Key, winnerAccentClass) => {
+                    const el1List = document.querySelectorAll(`[data-player="${p1Key}"]`);
+                    const el2List = document.querySelectorAll(`[data-player="${p2Key}"]`);
+                    const score1List = document.querySelectorAll(`[data-score="${p1Key}"]`);
+                    const score2List = document.querySelectorAll(`[data-score="${p2Key}"]`);
 
-                    if (!el1 || !el2) return;
-
+                    // Populate Player 1
                     if (matchObj.p1) {
-                        el1.innerText = matchObj.p1;
-                        el1.classList.remove('text-custom-italic', 'italic');
-                        el1.classList.add('text-custom-pri');
+                        el1List.forEach(el1 => {
+                            el1.innerText = matchObj.p1;
+                            el1.classList.remove('text-custom-italic', 'italic');
+                            el1.classList.add('text-custom-pri');
+                        });
                     }
+                    
+                    // Populate Player 2
                     if (matchObj.p2) {
-                        el2.innerText = matchObj.p2;
-                        el2.classList.remove('text-custom-italic', 'italic');
-                        el2.classList.add('text-custom-pri');
+                        el2List.forEach(el2 => {
+                            el2.innerText = matchObj.p2;
+                            el2.classList.remove('text-custom-italic', 'italic');
+                            el2.classList.add('text-custom-pri');
+                        });
                     }
 
-                    if (matchObj.p1_score !== null && matchObj.p1_score !== undefined && score1El) {
-                        score1El.innerText = matchObj.p1_score;
-                        score1El.classList.remove('hidden');
+                    // Populate Score 1
+                    if (matchObj.p1_score !== null && matchObj.p1_score !== undefined) {
+                        score1List.forEach(score1 => {
+                            score1.innerText = matchObj.p1_score;
+                            score1.classList.remove('hidden');
+                        });
                     }
-                    if (matchObj.p2_score !== null && matchObj.p2_score !== undefined && score2El) {
-                        score2El.innerText = matchObj.p2_score;
-                        score2El.classList.remove('hidden');
+                    
+                    // Populate Score 2
+                    if (matchObj.p2_score !== null && matchObj.p2_score !== undefined) {
+                        score2List.forEach(score2 => {
+                            score2.innerText = matchObj.p2_score;
+                            score2.classList.remove('hidden');
+                        });
                     }
 
+                    // Assign Win/Lose Styling States
                     if (matchObj.winner) {
                         if (matchObj.winner === matchObj.p1) {
-                            el1.classList.add(winnerAccentClass);
-                            el2.classList.add('loser-strike');
-                            if (score2El) score2El.classList.add('opacity-40');
+                            el1List.forEach(el1 => el1.classList.add(winnerAccentClass));
+                            el2List.forEach(el2 => el2.classList.add('loser-strike'));
+                            score2List.forEach(score2 => score2.classList.add('opacity-40'));
                         } else if (matchObj.winner === matchObj.p2) {
-                            el2.classList.add(winnerAccentClass);
-                            el1.classList.add('loser-strike');
-                            if (score1El) score1El.classList.add('opacity-40');
+                            el2List.forEach(el2 => el2.classList.add(winnerAccentClass));
+                            el1List.forEach(el1 => el1.classList.add('loser-strike'));
+                            score1List.forEach(score1 => score1.classList.add('opacity-40'));
                         }
                     }
                 };
 
+                // Map results cleanly to data tags
                 populateMatchup(matches.qf1, 'p0', 'p1', 'text-cyan-400');
                 populateMatchup(matches.qf2, 'p2', 'p3', 'text-cyan-400');
                 populateMatchup(matches.sf1, 'semi-l1', 'semi-l2', 'text-cyan-400');
@@ -525,14 +539,19 @@
                 populateMatchup(matches.qf3, 'p4', 'p5', 'text-purple-400');
                 populateMatchup(matches.qf4, 'p6', 'p7', 'text-purple-400');
 
+                // Update Champion Announcement UI blocks
                 if (matches.final.winner) {
-                    const announcement = document.getElementById('champion-announcement');
-                    const nameContainer = document.getElementById('champion-winner-name');
-                    if (announcement && nameContainer) {
+                    const announcements = document.querySelectorAll('[data-champion="announcement"]');
+                    const nameContainers = document.querySelectorAll('[data-champion="name"]');
+                    
+                    announcements.forEach(announcement => {
                         announcement.classList.remove('hidden');
                         announcement.classList.add('flex');
+                    });
+                    
+                    nameContainers.forEach(nameContainer => {
                         nameContainer.innerText = matches.final.winner;
-                    }
+                    });
                 }
             })
             .catch(error => {
