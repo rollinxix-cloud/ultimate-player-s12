@@ -1,33 +1,33 @@
 {
     "players": [
-        "Smile Xettri",
-        "Ganesh Nepali",
-        "D Yozon King",
-        "Subash Tamang",
-        "Binaya Shrestha",
+        "D Yozen King",
         "Hab II",
-        "Siv Sunar",
-        "Aashik Gurung"
+        "Ganesh Nepali",
+        "Binaya Shrestha",
+        "Subash Tamang",
+        "Aashik Gurung",
+        "Smile Xettri",
+        "Siv Sunar"
     ],
     "matches": {
         "qf1": {
-            "p1": "Smile Xettri",
-            "p2": "Ganesh Nepali",
-            "winner": null
-        },
-        "qf2": {
-            "p1": "D Yozon King",
-            "p2": "Subash Tamang",
-            "winner": null
-        },
-        "qf3": {
-            "p1": "Binaya Shrestha",
+            "p1": "D Yozen King",
             "p2": "Hab II",
             "winner": null
         },
-        "qf4": {
-            "p1": "Siv Sunar",
+        "qf2": {
+            "p1": "Ganesh Nepali",
+            "p2": "Binaya Shrestha",
+            "winner": null
+        },
+        "qf3": {
+            "p1": "Subash Tamang",
             "p2": "Aashik Gurung",
+            "winner": null
+        },
+        "qf4": {
+            "p1": "Smile Xettri",
+            "p2": "Siv Sunar",
             "winner": null
         },
         "sf1": {
