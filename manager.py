@@ -9,13 +9,13 @@ JSON_FILE = 'tournament.json'
 DEFAULT_STATE = {
     "players": [],
     "matches": {
-        "qf1": {"p1": None, "p2": None, "winner": None},
-        "qf2": {"p1": None, "p2": None, "winner": None},
-        "qf3": {"p1": None, "p2": None, "winner": None},
-        "qf4": {"p1": None, "p2": None, "winner": None},
-        "sf1": {"p1": None, "p2": None, "winner": None},
-        "sf2": {"p1": None, "p2": None, "winner": None},
-        "final": {"p1": None, "p2": None, "winner": None}
+        "qf1": {"p1": None, "p2": None, "p1_score": None, "p2_score": None, "winner": None},
+        "qf2": {"p1": None, "p2": None, "p1_score": None, "p2_score": None, "winner": None},
+        "qf3": {"p1": None, "p2": None, "p1_score": None, "p2_score": None, "winner": None},
+        "qf4": {"p1": None, "p2": None, "p1_score": None, "p2_score": None, "winner": None},
+        "sf1": {"p1": None, "p2": None, "p1_score": None, "p2_score": None, "winner": None},
+        "sf2": {"p1": None, "p2": None, "p1_score": None, "p2_score": None, "winner": None},
+        "final": {"p1": None, "p2": None, "p1_score": None, "p2_score": None, "winner": None}
     }
 }
 
@@ -23,7 +23,14 @@ def load_data():
     if os.path.exists(JSON_FILE):
         try:
             with open(JSON_FILE, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                data = json.load(f)
+                # Verify schema backwards compatibility (inject score keys if missing)
+                for key in data["matches"]:
+                    if "p1_score" not in data["matches"][key]:
+                        data["matches"][key]["p1_score"] = None
+                    if "p2_score" not in data["matches"][key]:
+                        data["matches"][key]["p2_score"] = None
+                return data
         except Exception:
             return DEFAULT_STATE.copy()
     return DEFAULT_STATE.copy()
@@ -71,18 +78,55 @@ def play_match(data, match_id, title, next_match=None, next_slot=None):
     match = data['matches'][match_id]
     if not match['p1'] or not match['p2']:
         print(f"\n⚠️ {title} is not ready yet.")
-    elif match['winner']:
-        print(f"\n✅ {title} finished. Winner: {match['winner']}")
-    else:
-        print(f"\n--- {title} ---")
-        print(f"1) {match['p1']}\n2) {match['p2']}")
-        win = input("Winner (1 or 2): ")
-        if win in ['1', '2']:
-            winner = match['p1'] if win == '1' else match['p2']
-            match['winner'] = winner
-            if next_match: data['matches'][next_match][next_slot] = winner
-            save_data(data)
-            print(f"🏆 {winner} advances!")
+        input("Press Enter...")
+        return
+        
+    if match['winner']:
+        print(f"\n✅ {title} finished. Winner: {match['winner']} ({match['p1_score']} - {match['p2_score']})")
+        input("Press Enter...")
+        return
+
+    print(f"\n--- {title} ---")
+    
+    # Secure validation loop for Player 1 Score
+    while True:
+        try:
+            score1_input = input(f"Enter score for {match['p1']}: ").strip()
+            score1 = int(score1_input)
+            if score1 < 0:
+                print("❌ Score cannot be negative.")
+                continue
+            break
+        except ValueError:
+            print("❌ Please enter a valid number.")
+
+    # Secure validation loop for Player 2 Score
+    while True:
+        try:
+            score2_input = input(f"Enter score for {match['p2']}: ").strip()
+            score2 = int(score2_input)
+            if score2 < 0:
+                print("❌ Score cannot be negative.")
+                continue
+            if score1 == score2:
+                print("❌ Knockout rules enforce a winner. Tie scores are not allowed!")
+                continue
+            break
+        except ValueError:
+            print("❌ Please enter a valid number.")
+
+    # Determine automatic winner
+    winner = match['p1'] if score1 > score2 else match['p2']
+    
+    match['p1_score'] = score1
+    match['p2_score'] = score2
+    match['winner'] = winner
+    
+    if next_match:
+        data['matches'][next_match][next_slot] = winner
+        
+    save_data(data)
+    print(f"\n🏆 {winner} wins {max(score1, score2)}-{min(score1, score2)} and advances!")
     input("Press Enter...")
 
 def main():
