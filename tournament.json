@@ -27,9 +27,9 @@
         "qf3": {
             "p1": "Subash Tamang",
             "p2": "Aashik Gurung",
-            "p1_score": null,
-            "p2_score": null,
-            "winner": null
+            "p1_score": 3,
+            "p2_score": 0,
+            "winner": "Subash Tamang"
         },
         "qf4": {
             "p1": "Smile Xettri",
@@ -46,7 +46,7 @@
             "winner": null
         },
         "sf2": {
-            "p1": null,
+            "p1": "Subash Tamang",
             "p2": "Smile Xettri",
             "p1_score": null,
             "p2_score": null,
