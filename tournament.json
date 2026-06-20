@@ -13,9 +13,9 @@
         "qf1": {
             "p1": "D Yozen King",
             "p2": "Hab II",
-            "p1_score": null,
-            "p2_score": null,
-            "winner": null
+            "p1_score": 8,
+            "p2_score": 9,
+            "winner": "Hab II"
         },
         "qf2": {
             "p1": "Ganesh Nepali",
@@ -39,7 +39,7 @@
             "winner": "Smile Xettri"
         },
         "sf1": {
-            "p1": null,
+            "p1": "Hab II",
             "p2": null,
             "p1_score": null,
             "p2_score": null,
