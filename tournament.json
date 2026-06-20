@@ -20,9 +20,9 @@
         "qf2": {
             "p1": "Ganesh Nepali",
             "p2": "Binaya Shrestha",
-            "p1_score": null,
-            "p2_score": null,
-            "winner": null
+            "p1_score": 7,
+            "p2_score": 5,
+            "winner": "Ganesh Nepali"
         },
         "qf3": {
             "p1": "Subash Tamang",
@@ -40,7 +40,7 @@
         },
         "sf1": {
             "p1": "Hab II",
-            "p2": null,
+            "p2": "Ganesh Nepali",
             "p1_score": null,
             "p2_score": null,
             "winner": null
