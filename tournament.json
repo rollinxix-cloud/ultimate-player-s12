@@ -41,9 +41,9 @@
         "sf1": {
             "p1": "Hab II",
             "p2": "Ganesh Nepali",
-            "p1_score": null,
-            "p2_score": null,
-            "winner": null
+            "p1_score": 14,
+            "p2_score": 5,
+            "winner": "Hab II"
         },
         "sf2": {
             "p1": "Subash Tamang",
@@ -53,7 +53,7 @@
             "winner": null
         },
         "final": {
-            "p1": null,
+            "p1": "Hab II",
             "p2": null,
             "p1_score": null,
             "p2_score": null,
