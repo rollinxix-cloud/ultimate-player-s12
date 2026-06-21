@@ -48,13 +48,13 @@
         "sf2": {
             "p1": "Subash Tamang",
             "p2": "Smile Xettri",
-            "p1_score": null,
-            "p2_score": null,
-            "winner": null
+            "p1_score": 6,
+            "p2_score": 5,
+            "winner": "Subash Tamang"
         },
         "final": {
             "p1": "Hab II",
-            "p2": null,
+            "p2": "Subash Tamang",
             "p1_score": null,
             "p2_score": null,
             "winner": null
