@@ -55,9 +55,9 @@
         "final": {
             "p1": "Hab II",
             "p2": "Subash Tamang",
-            "p1_score": null,
-            "p2_score": null,
-            "winner": null
+            "p1_score": 3,
+            "p2_score": 1,
+            "winner": "Hab II"
         }
     }
 }
